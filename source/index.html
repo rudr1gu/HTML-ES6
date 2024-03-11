@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Front end ES6</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Front end ES6</h1>
+        </div>
+        
+    </header>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Front end ES6</a>
+          <button  onclick="window.myFun()" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <p class="menu-nav"><i class='bx bx-menu'></i></p>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Front end ES6</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Titulo
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                    <li><a class="dropdown-item" href="#">Opção 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class='bx bx-search-alt'></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <section id="grid">
+        <article class="parent">
+            <div class="div1">
+              <h3>Redes Sociais</h3>
+              <section class="rSociais">
+                <ul>
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i> Facebook</a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i> Instagram</a></li>
+                    <li><a href="#"><i class='bx bxl-youtube'></i> YouTube</a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin'></i> Linkedin</a></li>
+                    <li><a href="#"><i class='bx bxl-github' ></i> GitHub</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="div2">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+            </div>
+            <div class="div3">
+              <h2>Titulo</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+            
+            </div>
+            <div class="div4">
+              <h2>Titulo</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat repellat qui, libero dolores ipsam? Nisi, quas enim. Ea earum reprehenderit tenetur corporis laborum minus ab tempore ex facilis accusantium.</p>
+                
+            </div>
+        </article>
+    </section>
+    
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
