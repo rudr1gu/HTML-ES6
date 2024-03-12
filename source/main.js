@@ -1,5 +1,6 @@
-const myFunctionArrow = () => {
-    alert('Minha Função funcionou');
-}
+const btnDrawer =  document.getElementById("btnDrawer")
+const menu =  document.getElementById("menu")
 
-window.myFun = myFunctionArrow;
+btnDrawer.addEventListener("click", ()=>{
+    menu.style.display == "none" || menu.style.display == ""? menu.style.display = "block" : menu.style.display = "none";
+ })

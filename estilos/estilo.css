@@ -58,37 +58,32 @@ header{
     font-style: normal;
 }
 
-.navbar{
+nav{
     position: fixed;
     top: 0px;
     left: 0;
     right: 0;
     background-color: var(--cor5);
     box-shadow: 0px 0px 7px black ;
-    z-index: 111;
-   
+    z-index: 111;   
+    padding: 5px;
 }
 
-.navbar-brand{
-    color: var(--cor2);
-    font-family: "Ubuntu";
-    font-size: 1.5em;
-}
-
-.navbar-brand:hover{
-    color: var(--cor1);
-}
-
-.menu-nav{
-    padding: 0;
-    margin: 0;
-    color: var(--cor2);
+#btnDrawer{
+    width: 50px;
+    height: 50px;
     font-size: 2em;
+    color: white;
+    background-color: var(--cor5);
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
-.menu-nav:hover{
-    color: var(--cor1);
+div#menu{
+    display: none;
+    background-color: white;
 }
+
 
 .parent {
     position: absolute;
