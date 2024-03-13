@@ -7,8 +7,13 @@ btnDrawer.addEventListener("click", ()=>{
  })
 
  btnToggled.addEventListener("click", ()=>{
-    if(btnToggled.value == "<i class='bx bx-toggle-left'></i>"){
-        btnToggled.innerHTML = "<i class='bx bx-toggle-right'></i>"
-    }else{btnToggled.innerHTML = "<i class='bx bx-toggle-left'></i>"
-    }
+
+
+    if (btnToggled.value == "") {
+        btnToggled.value = "toggled";
+        btnToggled.innerHTML = "<i class='bx bx-toggle-right'></i>";
+      } else {
+        btnToggled.value = "";
+        btnToggled.innerHTML = "<i class='bx bx-toggle-left'></i>";
+      }
  })
